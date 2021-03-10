@@ -18,7 +18,7 @@ timeOfDay="T00:00:01.000Z"
 tokenExpirationTime="$then$timeOfDay"
 infra="$prefix-$location-wvd-infra"
 hosts="$prefix-$location-wvd-hosts"
-
+ 
 az account set --subscription $subscription
 az group create --name $infra --location $location
 az group create --name $hosts --location $location
