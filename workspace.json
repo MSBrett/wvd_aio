@@ -1,0 +1,53 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "workspaceName": {
+            "type": "String",
+            "defaultValue": "wvd-win10-arm-ws"
+        },
+        "workspaceDescription": {
+            "defaultValue": "Windows 10 deployment",
+            "type": "String"
+        },
+        "location": {
+            "defaultValue": "eastus",
+            "type": "String"
+        },
+        "friendlyName": {
+            "defaultValue": "Windows 10 Workspace",
+            "type": "String"
+        },
+        "appGroups": {
+            "defaultValue": [
+            ],
+            "type": "Array"
+        },
+        "tags": {
+            "defaultValue": {
+            },
+            "type": "Object"
+        },
+        "apiVersion": {
+            "defaultValue": "2019-12-10-preview",
+            "type": "String",
+            "metadata": {
+                "description": "WVD api version"
+            }
+        }
+    },
+    "resources": [
+        {
+            "type": "Microsoft.DesktopVirtualization/workspaces",
+            "apiVersion": "[parameters('apiVersion')]",
+            "name": "[parameters('workspaceName')]",
+            "location": "[parameters('location')]",
+            "tags": "[parameters('tags')]",
+            "properties": {
+                "friendlyName": "[parameters('friendlyName')]",
+                "description": "[parameters('workspaceDescription')]",
+                "applicationGroupReferences": "[parameters('appGroups')]"
+            }
+        }
+    ]
+}

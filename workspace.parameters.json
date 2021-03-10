@@ -1,0 +1,29 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "workspaceName": {
+            "value": "wvd-workspace-win10"
+        },
+        "workspaceDescription": {
+            "value": "Windows 10 WVD deployment"
+        },
+        "location": {
+            "value": "eastus"
+        },
+        "friendlyName": {
+            "value": "Windows 10 Workspace"
+        },
+        "appGroups": {
+            "value": [
+            ]
+        },
+        "tags": {
+            "value": {
+            }
+        },
+        "apiVersion": {
+            "value": "2019-12-10-preview"
+        }
+    }
+}

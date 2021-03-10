@@ -1,0 +1,189 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "addToWorkspace": {
+            "value": true
+        },
+        "administratorAccountPassword": {
+            "value": ""
+        },
+        "administratorAccountUsername": {
+            "value": "MyAdminAccount@acme.onmicrosoft.com"
+        },
+        "allApplicationGroupReferences": {
+            "value": ""
+        },
+        "apiVersion": {
+            "value": "2019-12-10-preview"
+        },
+        "applicationGroupTags": {
+            "value": {
+            }
+        },
+        "artifactsLocation": {
+            "value": "https://wvdportalstorageblob.blob.core.windows.net/galleryartifacts/Configuration_10-26-2020.zip"
+        },
+        "availabilitySetTags": {
+            "value": {
+            }
+        },
+        "createAvailabilitySet": {
+            "value": true
+        },
+        "createNetworkSecurityGroup": {
+            "value": false
+        },
+        "customRdpProperty": {
+            "value": ""
+        },
+        "deploymentId": {
+            "value": ""
+        },
+        "domain": {
+            "value": ""
+        },
+        "existingSubnetName": {
+            "value": "HostPool1"
+        },
+        "existingVnetName": {
+            "value": "vnet-WindowsVirtualDesktop"
+        },
+        "hostpoolDescription": {
+            "value": "Windows 10 deployment"
+        },
+        "hostpoolFriendlyName": {
+            "value": "Windows 10 Hostpool"
+        },
+        "hostpoolName": {
+            "value": "HostPool1"
+        },
+        "hostpoolTags": {
+            "value": {
+            }
+        },
+        "hostpoolType": {
+            "value": "Pooled"
+        },
+        "imageTags": {
+            "value": {
+            }
+        },
+        "loadBalancerType": {
+            "value": "DepthFirst"
+        },
+        "location": {
+            "value": "eastus"
+        },
+        "maxSessionLimit": {
+            "value": 99999
+        },
+        "nestedTemplatesLocation": {
+            "value": "https://catalogartifact.azureedge.net/publicartifacts/Microsoft.Hostpool-ARM-1.0.15-preview/"
+        },
+        "networkInterfaceTags": {
+            "value": {
+            }
+        },
+        "networkSecurityGroupId": {
+            "value": ""
+        },
+        "networkSecurityGroupRules": {
+            "value": [
+            ]
+        },
+        "networkSecurityGroupTags": {
+            "value": {
+            }
+        },
+        "ouPath": {
+            "value": ""
+        },
+        "personalDesktopAssignmentType": {
+            "value": "Automatic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "publicIPAddressTags": {
+            "value": {
+            }
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "resourceGroup": {
+            "value": "wvd-sessionhosts-rg"
+        },
+        "storageAccountResourceGroupName": {
+            "value": ""
+        },
+        "tokenExpirationTime": {
+            "value": "2021-12-20T00:00:01.000Z"
+        },
+        "usePublicIP": {
+            "value": false
+        },
+        "validationEnviroment": {
+            "value": false
+        },
+        "virtualMachineTags": {
+            "value": {
+            }
+        },
+        "virtualNetworkResourceGroupName": {
+            "value": "wvd-infra-rg"
+        },
+        "vmCustomImageSourceId": {
+            "value": ""
+        },
+        "vmDiskType": {
+            "value": "Premium_LRS"
+        },
+        "vmGalleryImageOffer": {
+            "value": "office-365"
+        },
+        "vmGalleryImagePublisher": {
+            "value": "microsoftwindowsdesktop"
+        },
+        "vmGalleryImageSKU": {
+            "value": "20h2-evd-o365pp"
+        },
+        "vmImageType": {
+            "value": "Gallery"
+        },
+        "vmImageVhdUri": {
+            "value": ""
+        },
+        "vmLocation": {
+            "value": "eastus"
+        },
+        "vmNamePrefix": {
+            "value": "hp1"
+        },
+        "vmNumberOfInstances": {
+            "value": 2
+        },
+        "vmResourceGroup": {
+            "value": "wvd-sessionhosts-rg"
+        },
+        "vmSize": {
+            "value": "Standard_B2s"
+        },
+        "vmTemplate": {
+            "value": ""
+        },
+        "vmUseManagedDisks": {
+            "value": true
+        },
+        "workspaceLocation": {
+            "value": "eastus"
+        },
+        "workSpaceName": {
+            "value": "wvd-win10-ws"
+        },
+        "workspaceResourceGroup": {
+            "value": "wvd-sessionhosts-rg"
+        }
+    }
+}

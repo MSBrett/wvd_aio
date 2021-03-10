@@ -1,0 +1,46 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "_artifactsLocation": {
+            "value": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/active-directory-new-domain/"
+        },
+        "adminPassword": {
+            "value": ""
+        },
+        "adminUserName": {
+            "value": "azureadmin"
+        },
+        "deployDomain": {
+            "value": false
+        },
+        "wvdNetwork": {
+            "value": {
+                "name": "vnet-WindowsVirtualDesktop",
+                "addressPrefix": "10.128.0.0/16",
+                "directorySubnetName": "ActiveDirectorySubnet",
+                "directorySubnetPrefix": "10.128.0.0/24",
+                "bastionSubnetPrefix": "10.128.1.0/29",
+                "gatewaySubnetPrefix": "10.128.2.0/27",
+                "hostPoolSubnetName1" : "HostPool1",
+                "hostPoolSubnetPrefix1" : "10.128.4.0/22",
+                "hostPoolSubnetName2" : "HostPool2",
+                "hostPoolSubnetPrefix2" : "10.128.8.0/22",
+                "subnetNsgName": "nsg-WindowsVirtualDesktop",
+                "dnsServers": [ 
+                    "10.128.0.4",
+                    "168.63.129.16"
+                ]
+            }
+        },
+        "domainName": {
+            "value": "wvd.acme.com"
+        },
+        "location": {
+            "value": "eastus"
+        },
+        "vmSize": {
+            "value": "Standard_B2s"
+        }
+    }
+}
