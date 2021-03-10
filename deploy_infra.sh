@@ -1,7 +1,7 @@
 #!/bin/sh
 # Change these vars to fit your needs
-prefix='acme'
-domainName='wvd.acme.com'
+prefix='contoso'
+domainName='wvd.contoso.com'
 location='westus'
 subscription='workload'
 adminUserName='azureadmin'

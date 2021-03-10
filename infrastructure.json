@@ -26,7 +26,7 @@
         },
         "domainName": {
             "type": "string",
-            "defaultValue": "wvd.acme.com",
+            "defaultValue": "wvd.contoso.com",
             "metadata": {
                 "description": "Name of the AD domain to create"
             }

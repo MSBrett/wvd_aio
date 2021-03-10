@@ -34,7 +34,7 @@
             }
         },
         "domainName": {
-            "value": "wvd.acme.com"
+            "value": "wvd.contoso.com"
         },
         "location": {
             "value": "eastus"

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Change these vars to fit your needs
-prefix='acme'
+prefix='contoso'
 location='westus'
 subscription='workload'
 
